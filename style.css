@@ -361,10 +361,10 @@ p img {
 }
 
 .column {
-    flex: 0 0 300px;
+    flex: 0 0 20%;
     /* Ajusta este valor según tus necesidades */
     color: aliceblue;
-    padding: 0 20px;
+    padding: 0 2.5%;
     /* Añade espaciado horizontal entre las columnas */
     width: 100%;
 }
