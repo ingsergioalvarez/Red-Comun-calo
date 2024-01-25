@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Red Comúnicalo</title>
+    <link rel="icon" href="imagenes/icono.png" type="image/png">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -27,31 +28,33 @@
                 <h1><img src="imagenes/logo-comunicalo.png" class="logo-header"></h1>
 
             </div>
-            
+
 
             <div class="logo-carrito">
                 <a href="https://www.comunicalo.mx/index.php?accion=Contacto" target="_blank">
                     <img src="imagenes/CARRITO.png" alt="Imagen de carrito">
                 </a>
-                <a href="https://www.comunicalo.mx/index.php?accion=Contacto" target="_blank"><span class="custom-text"> Cotiza aquí</span></a>
+                <a href="https://www.comunicalo.mx/index.php?accion=Contacto" target="_blank"><span class="custom-text">
+                        Cotiza aquí</span></a>
             </div>
         </div>
     </header>
-    <main >
+    <main>
         <section class="sidebar" id="sidebar-principal">
             <div class="minimizador-sidebar" id="minimizador">
                 <img src="imagenes/hamburguesa.png" onclick="toggleContenidoMenu()">
+                <span class="titlulo-menu-minimizador">Soluciones</span>
             </div>
             <div class="contenido-menu" id="menu">
                 <hi class="titlulo-menu">Soluciones</hi>
                 <div class="menu-principal">
-                    
+
                     <ul class="menu">
 
 
                         <li>
                             <span class="menu-item" onclick="cargarMapa('Red',
-                             'https://www.google.com/maps/d/u/2/embed?mid=1V92Q-6X8vpOfPcyBbulF1AWWK8gXya4&ehbc=2E312F',
+                             'https://www.google.com/maps/d/u/2/embed?mid=1V92Q-6X8vpOfPcyBbulF1AWWK8gXya4&ehbc=2E312Fll=23.173348834172327%2C-99.27380175&z=6',
                              'Red Comunícalo'); toggleSublist('RedSublist')">Red Comunícalo</span>
 
                         </li>
@@ -183,7 +186,7 @@
                 </div>
 
             </div>
-            
+
 
 
         </section>
@@ -234,7 +237,7 @@
 
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="miFooter">
         <section class="bottom-container">
             <div class="column">
                 <h1>Dirección</h1>
@@ -265,42 +268,53 @@
                 <!-- ...otros elementos de la lista Servicios... -->
             </div>
             <div class="column">
-                <h1>Apoyo</h1>
+                <h1 id="apoyo-title">Apoyo </h1>
                 <br>
-                <a href="https://www.comunicalo.mx/index.php?accion=Por-que-nosotros">Quiénes Somos</a>
-                <a href="https://www.comunicalo.mx/paginas/CCLJ/COMUNICALO_Codigo_de_practicas_comerciales.pdf">Código
+
+                <a class="lista-desplegable" href="https://www.comunicalo.mx/index.php?accion=Por-que-nosotros">Quiénes Somos</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/CCLJ/COMUNICALO_Codigo_de_practicas_comerciales.pdf">Código
                     de
                     Prácticas Comerciales</a>
-                <a href="https://www.comunicalo.mx/paginas/CDMUT/cartaderechosminimos_.pdf">Carta derechos mínimos
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/CDMUT/cartaderechosminimos_.pdf">Carta derechos mínimos
                     usuarios</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=TDT">Tabla de Tarifas</a>
-                <a
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=TDT">Tabla de
+                    Tarifas</a>
+                <a class="lista-desplegable" 
                     href="https://www.comunicalo.mx/paginas/Escalacion/Escalacion-Interna-Comunicalo-de-Mexico-SA-deCV-marz_22-1.pdf">Escalación</a>
-                <a href="https://www.comunicalo.mx/paginas/CJ/Colaboracionconlajusticia.pdf">Colaboración con la
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/CJ/Colaboracionconlajusticia.pdf">Colaboración con la
                     Justicia</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=CJ1">Colaboración con la Justicia(Audible)</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=CCLJ1">Código de Prácticas Comerciales(Audible)</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=CDMUT1">Carta derechos mínimos usuarios(Audible)</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=Productos-y-Servicios">Productos/Servicios</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=Contacto">Contacto</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=DocDes">Documentos Descargables</a>
-                <a href="https://www.comunicalo.mx/paginas/PGC/POLITICAS_GESTION_COMUNICALO.pdf">Código de Política de
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=CJ1">Colaboración con
+                    la Justicia(Audible)</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=CCLJ1">Código de
+                    Prácticas Comerciales(Audible)</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=CDMUT1">Carta derechos
+                    mínimos usuarios(Audible)</a>
+
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=Productos-y-Servicios">Productos/Servicios</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=Contacto">Contacto</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=DocDes">Documentos
+                    Descargables</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/PGC/POLITICAS_GESTION_COMUNICALO.pdf">Código de Política
+                    de
                     Administración de Tráfico y de Red</a>
-                <a href="https://www.comunicalo.mx/paginas/LIT/lineamientos_de_informacion_transparente_COMUNICALO.pdf">Lineamientos
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/LIT/lineamientos_de_informacion_transparente_COMUNICALO.pdf">Lineamientos
                     de Información Transparente</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=Aviso-de-Privacidad">Aviso de Privacidad</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=AP1">Aviso de Privacidad(Audible)</a>
-                <a href="https://www.comunicalo.mx/paginas/PCTel/Profecocontratotelefonia_.pdf">Profeco Contrato
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=Aviso-de-Privacidad">Aviso de Privacidad</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=AP1" >Aviso de
+                    Privacidad(Audible)</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/PCTel/Profecocontratotelefonia_.pdf">Profeco Contrato
                     Telefonia</a>
-                <a href="https://www.comunicalo.mx/paginas/PCInter/COMUNICALOContratoInternetPROFECO_.pdf">Profeco
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/PCInter/COMUNICALOContratoInternetPROFECO_.pdf">Profeco
                     Contrato
                     Internet</a>
-                <a href="https://www.comunicalo.mx/paginas/PCInter/COMUNICALOContratoInternetPROFECO_.pdf">Profeco
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/PCInter/COMUNICALOContratoInternetPROFECO_.pdf" >Profeco
                     Contrato
                     Internet y Telefonia</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=PCTel1">Profeco Contrato Telefonia(Audible)</a>
-                <a href="https://www.comunicalo.mx/index.php?accion=PCInter1">Profeco Contrato Internet(Audible)</a>
-                <a href="https://www.comunicalo.mx/paginas/PC/Diagrama-Contratacion.pdf">Proceso Contratación</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=PCTel1">Profeco
+                    Contrato Telefonia(Audible)</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/index.php?accion=PCInter1" >Profeco
+                    Contrato Internet(Audible)</a>
+                <a class="lista-desplegable"  href="https://www.comunicalo.mx/paginas/PC/Diagrama-Contratacion.pdf">Proceso Contratación</a>
 
 
             </div>
