@@ -1,0 +1,531 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.box-header {
+    background: rgb(0, 49, 131);
+    padding: 10px 0 10px;
+}
+
+.nav a {
+
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+    /* Puedes agregar el color aquí si prefieres */
+}
+
+.nav {
+    display: inline-block;
+    padding: 0 4px;
+}
+
+.box-header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #c5c5c5;
+    padding: 10px;
+}
+
+.logo-header {
+    width: 30%;
+    padding: 10px;
+}
+
+.titulo-central {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 49, 131);
+}
+
+.logo-carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    text-decoration: none;
+    /* Agrega una altura al contenedor */
+}
+
+.logo-carrito img {
+    width: 20%;
+    min-height: 50px;
+    /* Establece una altura mínima para la imagen */
+    display: block;
+    /* Añade esto para alinear correctamente */
+    margin: auto;
+}
+
+.custom-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 49, 131);
+
+}
+
+main {
+    display: flex;
+
+
+}
+
+.sidebar {
+    background: rgb(1, 31, 83);
+    flex-shrink: 0;
+    /* Evita que la barra lateral se reduzca más allá de su contenido */
+    width: 20%;
+    min-width: 250px;
+    z-index: 2;
+    /* Asegura que esté por encima de la sección principal */
+}
+
+.contenido-menu {
+    width: 80%;
+    padding: 25px 10px 10px 15px;
+    overflow-y: auto;
+
+
+}
+
+.titlulo-menu {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 30px;
+}
+
+
+
+.menu-item {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+
+.menu-item:hover {
+    background: rgb(20, 107, 189);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.sub-menu {
+    margin-top: 10px;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+    background: rgb(5, 35, 151);
+
+}
+
+.sub-menu h1 {
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.sublist {
+    display: none;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 5px 30px;
+
+
+
+}
+
+.sublist:hover {
+    background: rgb(20, 107, 189);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sublist1 h1 {
+    background: rgb(0, 49, 131);
+    padding: 15px;
+}
+
+.sublist1 li {
+    display: none;
+    font-size: 15px;
+    color: aliceblue;
+    display: block;
+    padding: 5px 0 5px 50px;
+    border: rgb(40, 41, 41) solid .5px;
+    background: rgb(97, 98, 99);
+    cursor: auto;
+}
+
+
+.sublist1 li:hover {
+    background: rgb(20, 107, 189);
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+
+
+.minimizador-sidebar {
+    width: 20%;
+    text-align: center;
+
+
+}
+
+.minimizador-sidebar img {
+    width: 50%;
+    padding: 5% 0;
+}
+
+
+.principal {
+    width: 80%;
+    position: relative;
+}
+
+.velo {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    /* Asegura que esté por encima de otros elementos dentro de la sección */
+}
+
+.image-container2 {
+    padding: 10px 0 0 2.25%;
+    text-align: left;
+
+}
+
+.image-container2 img {
+    width: 20px;
+}
+
+.map-container {
+    width: 100%;
+    height: 640px;
+    padding: 0;
+    position: relative;
+
+
+}
+
+.overlay {
+
+    position: absolute;
+    top: 0;
+    left: 2.25%;
+    width: 95%;
+    height: 60px;
+    background-color: rgb(0, 49, 131);
+    text-align: center;
+
+}
+
+#textcontent {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.mapas {
+    margin: 0 2.25% 0 2.25%;
+    width: 95%;
+    height: 100%;
+}
+
+.overlay-tipos-red {
+    position: absolute;
+    bottom: 10px;
+    right: 4%;
+    background: rgba(34, 34, 34, 0.8);
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+p img {
+
+    width: 25px;
+    padding: 5px 10px 0 0;
+}
+
+.overlay-tipos-red h1 {
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+.overlay-tipos-red p {
+    color: aliceblue;
+    font-size: 16px;
+    padding: 0 0 5px 0;
+
+
+}
+
+
+
+.boton-buscar {
+    text-align: center;
+    width: 95%;
+
+    padding: 0 2.5% 10px 2.25%;
+
+
+
+}
+
+#search-btn {
+
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    display: block;
+    width: 20%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: rgb(0, 49, 131);
+    color: aliceblue;
+    text-decoration: none;
+    text-align: center;
+    transition: background 1s, font-size 1s, width 1s;
+    font-weight: bold;
+
+}
+
+#search-btn:hover {
+    background: rgb(0, 92, 252);
+    font-size: 20px;
+    width: 25%;
+
+
+}
+
+.footer {
+
+    display: flex;
+    background: rgb(0, 49, 131);
+    overflow-x: auto;
+    /* Agregado para permitir la barra de desplazamiento horizontal */
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0 0 0;
+    width: 100%;
+}
+
+.column {
+    flex: 0 0 300px;
+    /* Ajusta este valor según tus necesidades */
+    color: aliceblue;
+    padding: 0 20px;
+    /* Añade espaciado horizontal entre las columnas */
+    width: 100%;
+}
+
+.column h1 {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+.column img {
+    width: 12px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.column div {
+    display: flex;
+    align-items: center;
+}
+@media only screen and (min-width: 769px) {
+    .minimizador-sidebar{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .box-header2 {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-header {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .titulo-central {
+        display: none;
+    }
+
+    .logo-carrito {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+        border: solid #032bdb9c;
+        border-radius: 25px;
+        padding: 10px;
+        box-shadow: 0 0 10px rgba(3, 43, 219, 0.5);
+        background: linear-gradient(rgb(2, 74, 199), rgb(95, 94, 94), #ffffff, rgb(2, 71, 190));
+        text-decoration: none;
+        
+    }
+
+    .logo-carrito img {
+        display: none;
+    }
+
+
+    main {
+        flex-direction: column;
+        /* Cambia el diseño a una columna */
+    }
+
+    .sidebar {
+        width: 100%;
+        /* Ocupa todo el ancho de su contenedor */
+        position: relative;
+        /* Mantiene la posición relativa al contenedor */
+        min-width: 0;
+        /* Permite que la barra lateral se reduzca más allá de su contenido */
+    }
+
+    .sidebar.menu-abierto {
+        width: 100%;
+        /* Ocupa todo el ancho cuando está abierto */
+    }
+
+    .principal {
+        width: 100%;
+    }
+
+    #search-btn {
+        width: 70%;
+    }
+
+    #search-btn:hover {
+        width: 80%;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+        padding: 10%;
+        width: 100%;
+    }
+
+    .column {
+        flex: 0;
+        
+        color: aliceblue;
+        padding: 20px;
+        width: 100%;
+    }
+
+
+
+
+
+}
+.panel-collapse {
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#choose-network {
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 20px auto;
+    width: 300px;
+}
+
+#contenedor_vacio {
+    background-color: #ffffff;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.texto-contenido{
+    text-align: left;
+    padding: 20px 10% 10% 10%;
+
+}
+.texto-contenido ul, .texto-contenido ul li{
+    padding: 5px;
+}
+
+
