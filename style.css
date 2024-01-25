@@ -98,7 +98,7 @@ main {
 }
 
 .contenido-menu {
-    display: none;
+    
     width: 80%;
     padding: 25px 10px 10px 15px;
     overflow-y: auto;
@@ -440,6 +440,11 @@ p img {
         min-width: 0;
         /* Permite que la barra lateral se reduzca más allá de su contenido */
     }
+    .contenido-menu {
+    
+    display:none;
+
+}
 
     .sidebar.menu-abierto {
         width: 100%;
