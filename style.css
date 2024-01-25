@@ -85,7 +85,20 @@ main {
     /* Asegura que esté por encima de la sección principal */
 }
 
+.minimizador-sidebar {
+    width: 20%;
+    text-align: center;
+
+
+}
+
+.minimizador-sidebar img {
+    width: 50%;
+    padding: 5% 0;
+}
+
 .contenido-menu {
+    display: none;
     width: 80%;
     padding: 25px 10px 10px 15px;
     overflow-y: auto;
@@ -183,18 +196,6 @@ main {
 }
 
 
-
-.minimizador-sidebar {
-    width: 20%;
-    text-align: center;
-
-
-}
-
-.minimizador-sidebar img {
-    width: 50%;
-    padding: 5% 0;
-}
 
 
 .principal {
